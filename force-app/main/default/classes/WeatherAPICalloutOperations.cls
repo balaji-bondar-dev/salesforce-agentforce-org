@@ -8,10 +8,10 @@ public with sharing class WeatherAPICalloutOperations {
         HttpRequest request = new HttpRequest();
         request.setEndpoint(endpoint);
         request.setMethod('GET');
-        System.debug('@@@@@@@request '+request);
+        //System.debug('@@@@@@@request '+request);
         
         HttpResponse response = http.send(request);
-        System.debug('@@@@@@response '+response.getBody());//response
+        //System.debug('@@@@@@response '+response.getBody());//response
         
         if (response.getStatusCode() == 200) {
             //Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
