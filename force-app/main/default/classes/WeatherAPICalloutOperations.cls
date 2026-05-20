@@ -1,3 +1,4 @@
+//WeatherAPI Class
 public with sharing class WeatherAPICalloutOperations {
     public static void getInformation(String city) {
         System.debug('@@@@@@ Inside getInformation Method');
